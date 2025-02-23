@@ -45,6 +45,9 @@ public class Enemy : MonoBehaviour
                 playerHealth.TakeDamage(damage);
                 Debug.Log("Enemigo tocó al jugador y le hizo daño.");
             }
+
+            // Destruir al enemigo después de hacer daño
+            Destroy(gameObject);
         }
     }
 }
