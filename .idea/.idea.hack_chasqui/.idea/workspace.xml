@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3030f0e-dcbd-42b4-8708-9dfa7d1dc778" name="Changes" comment="fixes">
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/Example/Example.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/Example/Example.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-cloud-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-cloud-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-cloud-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-cloud-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-mountain-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-mountain-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-sky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/beach-sky.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/sea.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/sea.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/wave-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/day-backgrounds/wave-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-cloud-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-cloud-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-cloud-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-cloud-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-mountain-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-mountain-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-sky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-sky.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-sea.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-sea.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-wave-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-wave-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-cloud-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-cloud-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-cloud-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-cloud-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-mountain-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-mountain-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-sky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-beach-sky.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-sea.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-sea.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-wave-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free 2D Adventure Beach Pack/sunset-backgrounds/sunset-wave-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_bat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_bat.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_leaf.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_leaf.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_octo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_octo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_snake.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/Cards/card_snake.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hack_chasqui.sln" beforeDir="false" afterPath="$PROJECT_DIR$/hack_chasqui.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../hack_chasqui\exportToHTML" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lucille" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDON9-tDs6MLwAH",
+        "number": 5
+      },
+      "lastSeen": 1740287004626
+    }
+  ]
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jpalominolau/hack_chasqui.git&quot;,
+    &quot;accountId&quot;: &quot;b5fad8a7-014d-470c-b1d3-421406974a47&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;jpalominolau&quot;,
+    &quot;repository&quot;: &quot;hack_chasqui&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/lucil/hack_chasqui/Assets/Prefabs/CardPrefab.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucil/hack_chasqui/Assets/Prefabs/CardPrefab.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucil/hack_chasqui/Assets/Prefabs/CardPrefab.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucil/hack_chasqui/Assets/Scenes/MainScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lucil/hack_chasqui/Assets/Scenes/MainScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tQLT94q4rUEgsp1Q7tyFgRA8pG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/lucil/hack_chasqui",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\lucil\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\lucil\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\lucil\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\6000.0.38f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\lucil\hack_chasqui -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\lucil\hack_chasqui" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\6000.0.38f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\lucil\hack_chasqui -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\lucil\hack_chasqui" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3030f0e-dcbd-42b4-8708-9dfa7d1dc778" name="Changes" comment="" />
+      <created>1740279357000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740279357000</updated>
+      <workItem from="1740279358061" duration="5370000" />
+      <workItem from="1740286771574" duration="223000" />
+      <workItem from="1740287000896" duration="973000" />
+    </task>
+    <task id="LOCAL-00001" summary="added menu and assets">
+      <option name="closed" value="true" />
+      <created>1740281639789</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740281639789</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed background">
+      <option name="closed" value="true" />
+      <created>1740283519747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740283519747</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Health Bar">
+      <option name="closed" value="true" />
+      <created>1740284676172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740284676172</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changed bar postion">
+      <option name="closed" value="true" />
+      <created>1740284877127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740284877127</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added mushic">
+      <option name="closed" value="true" />
+      <created>1740285844496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740285844496</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="added menu and assets" />
+    <MESSAGE value="fixed background" />
+    <MESSAGE value="Health Bar" />
+    <MESSAGE value="changed bar postion" />
+    <MESSAGE value="added mushic" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mushic" />
+  </component>
+</project>

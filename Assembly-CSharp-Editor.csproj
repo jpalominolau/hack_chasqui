@@ -60,8 +60,8 @@
     <Analyzer Include="C:\6000.0.38f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor\ChestEditor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\ProcessorUtil.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor\ChestEditor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\PropertyGroupProcessor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\LabelTextAttributeProcessor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\GroupAttributeProcessor.cs" />
