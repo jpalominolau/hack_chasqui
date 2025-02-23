@@ -3,8 +3,8 @@ using UnityEngine;
 public class BackgroundMover : MonoBehaviour
 {
     public float speed = 2f;
-    private Transform bg1;
-    private Transform bg2;
+    public Transform bg1;
+    public Transform bg2;
     private float bgWidth;
 
     void Start() {
