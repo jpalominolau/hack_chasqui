@@ -136,12 +136,13 @@ public class CardManager : MonoBehaviour
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null) {
             PlayerHealth playerHealth = playerObject.GetComponent<PlayerHealth>();
-            
-            if (playerHealth != null)
-                playerHealth.TakeDamage(6.0f);
 
+            float randomDamage = Random.Range(0f, 6f);
+
+            if (playerHealth != null)
+                playerHealth.TakeDamage(randomDamage);
         }
-        Debug.Log("Card Snake used: Hit for 6 HP!");
+        Debug.Log("Card Snake used: gamble for HP!");
     }
 
     void MassDestruction()
