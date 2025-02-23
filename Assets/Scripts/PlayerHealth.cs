@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -6,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 100f; // Player's maximum health
     public float currentHealth;   // Player's current health
     public Image healthBar;        // Reference to the health bar UI Image
+    
 
     void Start()
     {
@@ -25,6 +27,11 @@ public class PlayerHealth : MonoBehaviour
         if (Input.GetKey(KeyCode.H))  // Heal when pressing H
         {
             Heal(5f * Time.deltaTime);  // Heal over time while holding H
+        }
+
+        if (currentHealth <= 0)
+        {
+            GameOver();
         }
     }
 
@@ -53,5 +60,17 @@ public class PlayerHealth : MonoBehaviour
     {
         float healthPercentage = currentHealth / maxHealth;  // Calculate health percentage
         healthBar.fillAmount = healthPercentage;  // Set the fill amount of the health bar Image
+    }
+    
+    private void GameOver()
+    {
+        Debug.Log("Game Over!");
+
+
+        PlayerPrefs.SetInt("PlayerScore", Scoring.Instance.GetScore());
+        PlayerPrefs.Save();
+
+        Time.timeScale = 0f;  // Stop the game by freezing time
+        SceneManager.LoadScene("GameOver");  // Load the "GameOver" scene
     }
 }

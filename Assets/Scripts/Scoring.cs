@@ -4,45 +4,46 @@ using System.Collections;
 
 public class Scoring : MonoBehaviour
 {
-    public int score = 0; // Player's score
-    public Text scoreText; // Reference to the UI Text for score display
-    public PlayerHealth playerHealth; // Reference to PlayerHealth script
-    public int scoreMultiplier = 1; // Default multiplier is 1
+    public static Scoring Instance;
+    public int score = 0;
+    public Text scoreText;
+    public int scoreMultiplier = 1;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
 
     void Start()
     {
-        // Start adding 1 point every 5 seconds
-        InvokeRepeating(nameof(AddScore), 5f, 5f);
+        InvokeRepeating(nameof(AddScore), 5f, 5f);  // Add score every 5 seconds
     }
 
     void AddScore()
     {
-        if (playerHealth.currentHealth > 0) // Only score when alive
-        {
-            score += 1 * scoreMultiplier;
-            UpdateScoreText();
-        }
+        score += scoreMultiplier;
+        UpdateScoreText();
     }
 
     public void AddKillPoints(int points)
     {
-        if (playerHealth.currentHealth > 0)
-        {
-            score += points * scoreMultiplier;
-            UpdateScoreText();
-        }
+        score += points * scoreMultiplier;
+        UpdateScoreText();
     }
 
     public void ActivateMultiplier(int multiplier, float duration)
     {
-        StartCoroutine(MultiplierCoroutine(multiplier, duration));
+        StartCoroutine(MultiplierCoroutine(multiplier, duration));  // Start the multiplier coroutine
     }
 
     private IEnumerator MultiplierCoroutine(int multiplier, float duration)
     {
-        scoreMultiplier = multiplier;
-        yield return new WaitForSeconds(duration);
-        scoreMultiplier = 1; 
+        scoreMultiplier = multiplier;  // Set the multiplier
+        yield return new WaitForSeconds(duration);  // Wait for the duration
+        scoreMultiplier = 1;  // Reset the multiplier
     }
 
     void UpdateScoreText()
@@ -51,5 +52,10 @@ public class Scoring : MonoBehaviour
         {
             scoreText.text = "Score: " + score;
         }
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }
