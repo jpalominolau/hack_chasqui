@@ -60,8 +60,70 @@ public class CardManager : MonoBehaviour
             Transform slot = FindSlotForCard(cardToUse);
             if (slot != null)
             {
+                SpriteRenderer spriteRenderer = cardToUse.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null && spriteRenderer.sprite != null)
+                {
+                    string cardName = spriteRenderer.sprite.name;
+                    Debug.Log($"Using card: {cardName}");
+                    HandleCardAbility(cardName);
+                }
+                else
+                {
+                    Debug.LogError("SpriteRenderer or sprite is missing on the card.");
+                }
+
                 DestroyCardWithAnimation(cardToUse, slot);
             }
+        }
+    }
+
+    public void HandleCardAbility(string cardName)
+    {
+        switch (cardName)
+        {
+            case "card_octo":
+
+                break;
+
+            case "card_bat":
+                ScorePlayer();
+                break;
+
+            case "card_snake":
+
+                break;
+
+            case "card_leaf":
+                HealPlayer();
+                break;
+
+            default:
+                Debug.LogError("no cards found of that name.");
+                break;
+        }
+    }
+    void ScorePlayer()
+    {
+        Scoring scorePlayer = Object.FindFirstObjectByType<Scoring>();
+        if (scorePlayer != null)
+        {
+            scorePlayer.ActivateMultiplier(2, 1.5f);
+        }
+        else
+        {
+            Debug.LogWarning("cannot add score!");
+        }
+    }
+    void HealPlayer()
+    {        // Find the PlayerHealth instance in the scene
+        PlayerHealth playerHealth = Object.FindFirstObjectByType<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.Heal(3.0f);  // Call the Heal method on the PlayerHealth instance
+        }
+        else
+        {
+            Debug.LogError("PlayerHealth instance not found in the scene.");
         }
     }
 
