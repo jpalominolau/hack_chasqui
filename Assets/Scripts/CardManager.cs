@@ -82,7 +82,7 @@ public class CardManager : MonoBehaviour
         switch (cardName)
         {
             case "card_octo":
-
+                MassDestruction();
                 break;
 
             case "card_bat":
@@ -90,7 +90,7 @@ public class CardManager : MonoBehaviour
                 break;
 
             case "card_snake":
-
+                SlowDownEnemies(3.0f);
                 break;
 
             case "card_leaf":
@@ -102,6 +102,7 @@ public class CardManager : MonoBehaviour
                 break;
         }
     }
+
     void ScorePlayer()
     {
         Scoring scorePlayer = Object.FindFirstObjectByType<Scoring>();
@@ -114,6 +115,7 @@ public class CardManager : MonoBehaviour
             Debug.LogWarning("cannot add score!");
         }
     }
+
     void HealPlayer()
     {        // Find the PlayerHealth instance in the scene
         PlayerHealth playerHealth = Object.FindFirstObjectByType<PlayerHealth>();
@@ -125,6 +127,20 @@ public class CardManager : MonoBehaviour
         {
             Debug.LogError("PlayerHealth instance not found in the scene.");
         }
+    }
+
+    // Method to slow down all enemies
+    private void SlowDownEnemies(float duration)
+    {
+        //foreach (Enemy enemy in Enemy.activeEnemies)
+        //{
+        //    enemy.ActivateSlowdown(duration);
+        //}
+        //Debug.Log("Card Snake used: Enemies slowed down for " + duration + " seconds.");
+    }
+    void MassDestruction()
+    {
+
     }
 
     Transform FindSlotForCard(GameObject card)
