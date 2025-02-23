@@ -13,12 +13,10 @@ public class CardManager : MonoBehaviour
     {
         // Load all sprites from the "Cards" folder in Prefabs/Resources
         cardSprites = Resources.LoadAll<Sprite>("Cards");
-
         if (cardSprites.Length == 0)
         {
             Debug.LogError("No sprites found in the 'Cards' folder. Please add some sprites.");
         }
-
         DrawInitialCards();
     }
 
@@ -34,10 +32,8 @@ public class CardManager : MonoBehaviour
     {
         // Instantiate a new card at the given slot position
         GameObject newCard = Instantiate(cardPrefab, slot.position, Quaternion.identity);
-
         // Get the SpriteRenderer component of the card
         SpriteRenderer spriteRenderer = newCard.GetComponent<SpriteRenderer>();
-
         if (spriteRenderer != null && cardSprites.Length > 0)
         {
             // Randomly select a sprite from the loaded sprites
@@ -48,7 +44,6 @@ public class CardManager : MonoBehaviour
         {
             Debug.LogError("SpriteRenderer is missing or no sprites are available.");
         }
-
         AnimateIdle(newCard.transform);
         currentCards.Add(newCard);
     }
@@ -71,7 +66,6 @@ public class CardManager : MonoBehaviour
                 {
                     Debug.LogError("SpriteRenderer or sprite is missing on the card.");
                 }
-
                 DestroyCardWithAnimation(cardToUse, slot);
             }
         }
@@ -84,63 +78,89 @@ public class CardManager : MonoBehaviour
             case "card_octo":
                 MassDestruction();
                 break;
-
             case "card_bat":
                 ScorePlayer();
                 break;
-
             case "card_snake":
-                SlowDownEnemies(3.0f);
+                SlowDownEnemies();
                 break;
-
             case "card_leaf":
                 HealPlayer();
                 break;
-
             default:
-                Debug.LogError("no cards found of that name.");
+                Debug.LogError("No cards found with that name.");
                 break;
         }
     }
 
     void ScorePlayer()
     {
-        Scoring scorePlayer = Object.FindFirstObjectByType<Scoring>();
-        if (scorePlayer != null)
+        Scoring scoreManager = Object.FindFirstObjectByType<Scoring>();
+        if (scoreManager != null)
         {
-            scorePlayer.ActivateMultiplier(2, 1.5f);
+            scoreManager.ActivateMultiplier(2, 5f); // Multiplicador de 2x por 5 segundos
+            Debug.Log("Card Bat used: Score multiplier activated (2x for 5 seconds).");
         }
         else
         {
-            Debug.LogWarning("cannot add score!");
+            Debug.LogWarning("Scoring instance not found in the scene.");
         }
     }
 
     void HealPlayer()
-    {        // Find the PlayerHealth instance in the scene
-        PlayerHealth playerHealth = Object.FindFirstObjectByType<PlayerHealth>();
-        if (playerHealth != null)
+    {
+        // Find the player GameObject by tag
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
         {
-            playerHealth.Heal(3.0f);  // Call the Heal method on the PlayerHealth instance
+            PlayerHealth playerHealth = playerObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                Debug.Log("Healing player...");
+                playerHealth.Heal(3.0f); // Call the Heal method on the PlayerHealth instance
+            }
+            else
+            {
+                Debug.LogError("PlayerHealth component not found on the player GameObject.");
+            }
         }
         else
         {
-            Debug.LogError("PlayerHealth instance not found in the scene.");
+            Debug.LogError("Player GameObject with tag 'Player' not found in the scene.");
         }
     }
 
     // Method to slow down all enemies
-    private void SlowDownEnemies(float duration)
+    private void SlowDownEnemies()
     {
-        //foreach (Enemy enemy in Enemy.activeEnemies)
-        //{
-        //    enemy.ActivateSlowdown(duration);
-        //}
-        //Debug.Log("Card Snake used: Enemies slowed down for " + duration + " seconds.");
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null) {
+            PlayerHealth playerHealth = playerObject.GetComponent<PlayerHealth>();
+            
+            if (playerHealth != null)
+                playerHealth.TakeDamage(6.0f);
+
+        }
+        Debug.Log("Card Snake used: Hit for 6 HP!");
     }
+
     void MassDestruction()
     {
+        // Find all enemies with the "Enemy" tag
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
+        if (enemies.Length > 0)
+        {
+            foreach (GameObject enemy in enemies)
+            {
+                Destroy(enemy); // Destroy each enemy
+            }
+            Debug.Log($"Mass destruction activated: {enemies.Length} enemies destroyed.");
+        }
+        else
+        {
+            Debug.Log("No enemies found to destroy.");
+        }
     }
 
     Transform FindSlotForCard(GameObject card)
