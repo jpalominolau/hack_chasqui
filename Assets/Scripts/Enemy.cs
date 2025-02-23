@@ -24,21 +24,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Método para mover al enemigo hacia el jugador
+    // Método para mover al enemigo hacia el jugador solo en el eje X
     private void MoveTowardsPlayer()
     {
-        // Calcular la dirección hacia el jugador
-        Vector2 direction = (player.position - transform.position).normalized;
-        Debug.Log("Dirección: " + direction);
-
-        // Mover al enemigo
-        transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
-
-        // Forzar la posición final si está muy cerca
-        if (Vector2.Distance(transform.position, player.position) < 0.1f)
-        {
-            transform.position = player.position;
-        }
+        // Mover solo en el eje X hacia el jugador
+        float newX = Mathf.MoveTowards(transform.position.x, player.position.x, moveSpeed * Time.deltaTime);
+        transform.position = new Vector2(newX, transform.position.y);
     }
 
     // Detectar colisión con el jugador
